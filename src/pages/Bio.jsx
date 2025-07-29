@@ -28,10 +28,10 @@ const Bio = () => {
               for the entire team.
             </p>
           </div>
-          <div className="bg-indigo-100">
-            <div className="p-16 flex justify-center items-center h-full min-h-[300px]">
+          <div className="bg-red-700 rounded-xl">
+            <div className="p-8 flex justify-center items-center h-full min-h-[300px]">
               <p>
-                <img className="w-full" src="/images/bio/bio-pic.jpg" alt="Bio Pic" />
+                <img className="w-full shadow-xl rounded-xl" src="/images/bio/bio-pic.jpg" alt="Bio Pic" />
                 </p>
             </div>
           </div>

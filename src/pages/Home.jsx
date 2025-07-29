@@ -1,6 +1,9 @@
 import React from 'react';
 import Projects from '../components/Projects.jsx';
 import Nav from '../components/Nav.jsx';
+import { Image } from 'antd';
+import { Carousel } from "antd";
+import MyDrawer from '../components/MyDrawer.jsx';
 
 export default function Home() {
   return (
@@ -15,6 +18,10 @@ export default function Home() {
             "Transforming ideas into intuitive, user-focused digital experiences through creativity,
             collaboration, and seamless code."
           </p>
+          <Image
+            width={200}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          />
         </div>
       </div>
 

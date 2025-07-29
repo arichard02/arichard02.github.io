@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../components/Nav.jsx';
+import Laptop from '../components/devices/Laptop.jsx'
 
 export default function Tips() {
   return (
@@ -7,6 +8,8 @@ export default function Tips() {
       <Nav />
       <section className="panel">
         <h2>Resume / Portfolio Tips</h2>
+
+        <Laptop width="80%" imageUrl="./images/cne/desktop/ccap.png" />
 
         <h3 className="h3-underlined">Installation</h3>
         <ol>

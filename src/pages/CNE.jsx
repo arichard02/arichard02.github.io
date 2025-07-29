@@ -1,21 +1,28 @@
 import React from 'react';
-import Device from '../components/Device.jsx';
+import Device from '../components/devices/Device.jsx';
 import Nav from '../components/Nav.jsx';
+import { Carousel } from "antd";
 
 export default function CNE() {
   const features = [
     {
       name: 'Deliverable',
-      description: 'Web Application',
+      description: 'Responsive User-Friendly Web Application',
     },
     {
       name: 'My Role',
-      description: 'Web Developer',
+      description: 'Technical Project Manager ',
+    },
+    {
+      name: 'My Responsililities',
+      description: "Led a team of five web developers to implement a responsive web application using Webflow, ensuring seamless experiences across desktop, tablet, and mobile devices.",
+    },
+    {
+      description: "Directed the creation and implementation of scalable, secure solutions while adhering to industry best practices in coding and agile methodologies, optimizing performance and maintaining high standards.",
     },
     {
       name: 'The Team',
-      description:
-        '6 Developers, 3 UX Designers, 1 UX Researcher, 1 Brand Designer, 1 Project Manager',
+      description: '6 Developers, 3 UX Designers, 1 UX Researcher, 1 Brand Designer, 1 Project Manager', 
     },
     {
       name: 'The Product',
@@ -38,17 +45,9 @@ export default function CNE() {
       <section className="bg-[#185977]">
         {/* Left column */}
         <div className="panel grid grid-cols-1 md:grid-cols-3">
-          <div className="flex flex-col justify-center items-center h-full">
-            <h2 className="text-white text-center">Childcare Network of Evanston</h2>
-            <p className="text-white text-center text-xl">Website Redesign</p>
-          </div>
-
-          {/* Right column */}
-          <div className="bg-indigo-100 md:col-span-2">
-            <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
-              <p>Maybe a picture here?</p>
-            </div>
-          </div>
+         <div>
+          {/* {add laptop carousel here} */}
+         </div>
         </div>
       </section>
 
@@ -84,7 +83,9 @@ export default function CNE() {
           <section className="two-column-layout">
             <div className="bg-gray-200">
               <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
-                <p>Maybe a picture here?</p>
+                <p>
+                  <img src=""></img>
+                </p>
               </div>
             </div>
             <dl className="mt-10 space-y-8 text-gray-900">

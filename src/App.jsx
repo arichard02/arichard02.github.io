@@ -3,6 +3,8 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import AUX from './pages/TheAux';
 import CNE from './pages/CNE';
 import EYC from './pages/EYC';
+import BEL from './pages/BEL';
+import Test from './pages/Test';
 import Home from './pages/Home';
 import CaseStudies from './pages/CaseStudies';
 import Bio from './pages/Bio';
@@ -32,6 +34,8 @@ function App() {
           <Route path="/case-studies/aux/" element={<AUX />} />
           <Route path="/case-studies/cne/" element={<CNE />} />
           <Route path="/case-studies/eyc/" element={<EYC />} />
+          <Route path="/case-studies/bel/" element={<BEL />} />
+          <Route path="/case-studies/test/" element={<Test />} />
         </Routes>
       </div>
     </Router>

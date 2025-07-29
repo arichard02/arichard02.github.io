@@ -5,7 +5,7 @@ const projects = [
   {
     id: 'cne',
     title: 'Childcare Network of Evanston',
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    description: 'Website Redesign',
     imageUrl: './images/cne/cne-removebg-preview.png',
     color: '#54b2dd',
     url: '/case-studies/cne/',
@@ -13,7 +13,7 @@ const projects = [
   {
     id: 'aux',
     title: 'The AUX',
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    description: 'Website Redesign',
     imageUrl: './images/the-aux/the-aux.jpg',
     fit: 'cover',
     url: '/case-studies/aux/',
@@ -25,6 +25,23 @@ const projects = [
     fit: 'cover',
     color: '#f1ce71',
     url: '/case-studies/eyc/',
+  },
+  {
+    id: 'bel',
+    title: 'Black Entertainment Locator',
+    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageUrl: './images/bel/bel.png',
+    fit: 'contain',
+    color: '#444444',
+    url: '/case-studies/bel/',
+  },
+  {
+    id: 'test',
+    title: 'Test Page',
+    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    fit: 'cover',
+    color: '#305CDE',
+    url: '/case-studies/test/',
   },
 ];
 
