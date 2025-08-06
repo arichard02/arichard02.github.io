@@ -22,7 +22,7 @@ body {
   transform: scaleY(-1);
 }
 
-.panel-app {
+.panel-wave {
   position: relative;
   z-index: 1; /* foreground */
   display: flex;

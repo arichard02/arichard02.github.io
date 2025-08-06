@@ -9,6 +9,12 @@ import Home from './pages/Home';
 import CaseStudies from './pages/CaseStudies';
 import Bio from './pages/Bio';
 import Tips from './pages/Tips';
+import AnimatedSection from './pages/AnimatedSection';
+import Style from './pages/Style';
+// import WavePath from './components/WavePath';
+
+
+// import "./styles.css";
 // ScrollToTop component to handle scroll restoration
 function ScrollToTop() {
   const location = useLocation();
@@ -24,7 +30,18 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen">
+
+      {/* <Section title="Adwaina" />
+      <Section title="Hello world!" flipped />
+      <div className="min-h-screen"> */}
+
+      <div>
+        {/* <h1>Scroll to see the wave animate</h1>
+        <div style={{ height: '100vh' }} />
+        <WavePath />
+        <div style={{ height: '100vh' }} /> */}
+
+
         {/* Depending on the URL, render the appropriate component: */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -36,6 +53,7 @@ function App() {
           <Route path="/case-studies/eyc/" element={<EYC />} />
           <Route path="/case-studies/bel/" element={<BEL />} />
           <Route path="/case-studies/test/" element={<Test />} />
+          <Route path="/style" element={<Style />} />
         </Routes>
       </div>
     </Router>

@@ -2,22 +2,51 @@ import React from 'react';
 import Projects from '../components/Projects.jsx';
 import Nav from '../components/Nav.jsx';
 import { Image } from 'antd';
-import { Carousel } from "antd";
+import { Carousel } from 'antd';
 import MyDrawer from '../components/MyDrawer.jsx';
+import { fromJSON } from 'postcss';
+import WaveSections from './WaveSections';
+// import Style from '../pages/Style.css'
 
 export default function Home() {
+  const [darkMode, setDarkMode] = React.useState(false);
+
   return (
     <>
       <Nav isHome={true} />
 
+      {/* Button that toggles from light and dark  */}
+
+      <WaveSections />
+
+      <button style={{ backgroundColor: 'black', color: 'white' }}>Dark Mode</button>
+
+      <div className="containerr border " id="cont">
+        <p className="autoShow uji">Front-end</p>
+        <p className="autoShow uji">Web-developer</p>
+        <p className="autoShow uji">Designer</p>
+      </div>
+
+      <div className="section-wrapper border">
+        <section className="panel">
+          <h1>Lynn</h1>
+        </section>
+      </div>
+
+      <div className="section-wrapper border">
+        <section className="panel panel-2"></section>
+      </div>
+
       {/* Top Banner */}
-      <div className="bg-background-50">
-        <div className="panel">
-          <h1 className="text-center text-blue-600 text-7xl">Adwaina Richardson</h1>
-          <p className="body-text-large max-w-2xl mx-auto text-center">
-            "Transforming ideas into intuitive, user-focused digital experiences through creativity,
-            collaboration, and seamless code."
-          </p>
+      <div className="bg-background-50 border">
+        <div className="panel grid grid-cols-3 gap-8">
+          <div className="col-span-2">
+            <h1 className="text-center text-blue-600 text-7xl">Adwaina Richardson</h1>
+            <p className="body-text-large max-w-2xl mx-auto text-center">
+              "Transforming ideas into intuitive, user-focused digital experiences through
+              creativity, collaboration, and seamless code."
+            </p>
+          </div>
           <Image
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"

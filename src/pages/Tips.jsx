@@ -1,12 +1,12 @@
 import React from 'react';
 import Nav from '../components/Nav.jsx';
-import Laptop from '../components/devices/Laptop.jsx'
+import Laptop from '../components/devices/Laptop.jsx';
 
 export default function Tips() {
   return (
     <>
       <Nav />
-      <section className="panel">
+      <section className="panel flex-col">
         <h2>Resume / Portfolio Tips</h2>
 
         <Laptop width="80%" imageUrl="./images/cne/desktop/ccap.png" />
