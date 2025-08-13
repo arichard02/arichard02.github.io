@@ -27,15 +27,7 @@ export default function Home() {
         <p className="autoShow uji">Designer</p>
       </div>
 
-      <div className="section-wrapper border">
-        <section className="panel">
-          <h1>Lynn</h1>
-        </section>
-      </div>
-
-      <div className="section-wrapper border">
-        <section className="panel panel-2"></section>
-      </div>
+      
 
       {/* Top Banner */}
       <div className="bg-background-50 border">
