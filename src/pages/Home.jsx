@@ -7,6 +7,8 @@ import MyDrawer from '../components/MyDrawer.jsx';
 import { fromJSON } from 'postcss';
 import WaveSections from './WaveSections';
 // import Style from '../pages/Style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -20,12 +22,6 @@ export default function Home() {
       <WaveSections />
 
       <button style={{ backgroundColor: 'black', color: 'white' }}>Dark Mode</button>
-
-      <div className="containerr border " id="cont">
-        <p className="autoShow uji">Front-end</p>
-        <p className="autoShow uji">Web-developer</p>
-        <p className="autoShow uji">Designer</p>
-      </div>
 
       
 

@@ -26,6 +26,7 @@ body {
   position: relative;
   z-index: 1; /* foreground */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -34,7 +35,7 @@ body {
 
 .line {
   fill: none;
-  stroke-width: 10;
+  stroke-width: 3;
   stroke: rgb(78, 78, 78);
   stroke-dasharray: 28000;
   stroke-dashoffset: 28000;
