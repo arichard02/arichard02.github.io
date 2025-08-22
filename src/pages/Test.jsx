@@ -8,73 +8,72 @@ import CarouselSlide from '../components/carousel/CarouselSlide.jsx';
 import MyDrawer from '../components/MyDrawer.jsx';
 import Laptop from '../components/devices/Laptop.jsx';
 
-
-
-
-  
-  const features = [
-    {
-      name: 'Deliverable',
-      description:
-        'The project deliverables included a comprehensive project plan and timeline, detailed user research documentation such as interview guides and competitor analysis, and a full set of wireframes ranging from low- to high-fidelity. Additionally, I developed a complete branding kit featuring a style guide, color palette, typography, and imagery guidelines. The final product was a fully functional, responsive WordPress website built with a custom theme, integrating WooCommerce for product sales and a seamless appointment booking system. The site was thoroughly tested across multiple devices and browsers to ensure optimal performance and usability.',
-    },
-    {
-      name: 'My Role',
-      description: 'Project Manager | UX/UI Designer | WordPress Developer ',
-    },
-    {
-      name: 'My Responsililities',
-      description:
-        'My responsibilities encompassed leading the project management efforts by coordinating the team and maintaining consistent communication with the client. I conducted user research and competitive analysis to guide the design process, created wireframes, mockups, and branding assets aligned with the client’s vision. On the development side, I customized the WordPress theme to meet both aesthetic and functional requirements, integrating e-commerce and booking functionalities. I also managed the testing and quality assurance processes to deliver a polished final product, while regularly presenting milestones to the client and incorporating their feedback throughout the project.',
-    },
-    {
-      description:
-        'Directed the creation and implementation of scalable, secure solutions while adhering to industry best practices in coding and agile methodologies, optimizing performance and maintaining high standards.',
-    },
-    {
-      name: 'The Team',
-      description:
-        '6 Developers, 3 UX Designers, 1 UX Researcher, 1 Brand Designer, 1 Project Manager',
-    },
-    {
-      name: 'The Product',
-      description:
-        'WThe final product is a visually engaging, easy-to-navigate website designed specifically for an emerging beauty brand. It features an online store for beauty products, detailed service pages, and a streamlined appointment booking system. The site reflects the client’s unique brand personality through a cohesive and elegant design that works flawlessly across desktop and mobile devices, providing visitors with an intuitive and satisfying experience.',
-    },
-    {
-      name: 'Project Duration',
-      description: '6 months',
-    },
-    {
-      name: 'Technologies Used',
-      description:
-        'The website was developed using WordPress with a fully custom theme tailored to the client’s branding and needs. WooCommerce was integrated to handle the e-commerce aspect for product sales, alongside a booking plugin (such as Calendly or Bookly) to facilitate appointment scheduling. The design and prototyping process utilized Figma, while HTML, CSS, and JavaScript were employed for theme customization and ensuring responsive behavior. Google Analytics was set up to track user engagement and provide insights for future improvements.',
-    },
-  ];
-
+const features = [
+  {
+    name: 'Deliverable',
+    description:
+      'The project deliverables included a comprehensive project plan and timeline, detailed user research documentation such as interview guides and competitor analysis, and a full set of wireframes ranging from low- to high-fidelity. Additionally, I developed a complete branding kit featuring a style guide, color palette, typography, and imagery guidelines. The final product was a fully functional, responsive WordPress website built with a custom theme, integrating WooCommerce for product sales and a seamless appointment booking system. The site was thoroughly tested across multiple devices and browsers to ensure optimal performance and usability.',
+  },
+  {
+    name: 'My Role',
+    description: 'Project Manager | UX/UI Designer | WordPress Developer ',
+  },
+  {
+    name: 'My Responsililities',
+    description:
+      'My responsibilities encompassed leading the project management efforts by coordinating the team and maintaining consistent communication with the client. I conducted user research and competitive analysis to guide the design process, created wireframes, mockups, and branding assets aligned with the client’s vision. On the development side, I customized the WordPress theme to meet both aesthetic and functional requirements, integrating e-commerce and booking functionalities. I also managed the testing and quality assurance processes to deliver a polished final product, while regularly presenting milestones to the client and incorporating their feedback throughout the project.',
+  },
+  {
+    description:
+      'Directed the creation and implementation of scalable, secure solutions while adhering to industry best practices in coding and agile methodologies, optimizing performance and maintaining high standards.',
+  },
+  {
+    name: 'The Team',
+    description:
+      '6 Developers, 3 UX Designers, 1 UX Researcher, 1 Brand Designer, 1 Project Manager',
+  },
+  {
+    name: 'The Product',
+    description:
+      'WThe final product is a visually engaging, easy-to-navigate website designed specifically for an emerging beauty brand. It features an online store for beauty products, detailed service pages, and a streamlined appointment booking system. The site reflects the client’s unique brand personality through a cohesive and elegant design that works flawlessly across desktop and mobile devices, providing visitors with an intuitive and satisfying experience.',
+  },
+  {
+    name: 'Project Duration',
+    description: '6 months',
+  },
+  {
+    name: 'Technologies Used',
+    description:
+      'The website was developed using WordPress with a fully custom theme tailored to the client’s branding and needs. WooCommerce was integrated to handle the e-commerce aspect for product sales, alongside a booking plugin (such as Calendly or Bookly) to facilitate appointment scheduling. The design and prototyping process utilized Figma, while HTML, CSS, and JavaScript were employed for theme customization and ensuring responsive behavior. Google Analytics was set up to track user engagement and provide insights for future improvements.',
+  },
+];
+export default function Test() {
   return (
     <>
       <Nav />
-      
+
       {/* Homepage 1 */}
       <section className="bg-[#185977]">
         {/* Left column */}
         <div className="panel grid grid-cols-1 md:grid-cols-1">
           <div>
-            <div className='bg-blend-lighten'>
+            <div className="bg-blend-lighten">
               <Carousel autoplay>
                 <div>
-                  <h3> <img src="./images/cne/desktop/c1.png"/></h3>
-                  <img/>
+                  <h3>
+                    {' '}
+                    <img src="./images/cne/desktop/c1.png" />
+                  </h3>
+                  <img />
                 </div>
                 <div>
-                  <img src="./images/cne/desktop/c2.png"/>
+                  <img src="./images/cne/desktop/c2.png" />
                 </div>
                 <div>
-                  <img src="./images/cne/desktop/c3.png"/>
+                  <img src="./images/cne/desktop/c3.png" />
                 </div>
                 <div>
-                  <img src="./images/cne/desktop/c4.png"/>
+                  <img src="./images/cne/desktop/c4.png" />
                 </div>
               </Carousel>
             </div>
@@ -96,11 +95,11 @@ import Laptop from '../components/devices/Laptop.jsx';
             <Laptop width="80%" imageUrl="./images/cne/desktop/ccap.png" />
             <h3 className="text-center">Slide 1</h3>
           </CarouselSlide>
-         <CarouselSlide className="py-28">
+          <CarouselSlide className="py-28">
             <Laptop width="80%" imageUrl="./images/cne/desktop/ccap.png" />
             <h3 className="text-center">Slide 2</h3>
           </CarouselSlide>
-         <CarouselSlide className="py-28">
+          <CarouselSlide className="py-28">
             <Laptop width="80%" imageUrl="./images/cne/desktop/ccap.png" />
             <h3 className="text-center">Slide 3</h3>
           </CarouselSlide>
@@ -141,7 +140,7 @@ import Laptop from '../components/devices/Laptop.jsx';
             <div className="bg-gray-200">
               <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
                 <p>
-                  <img src=""/>
+                  <img src="" />
                 </p>
               </div>
             </div>
@@ -219,9 +218,7 @@ import Laptop from '../components/devices/Laptop.jsx';
           <img className="w-full" src="/images/cne/desktop/impact.png" alt="CNE Impact" />
         </div>
       </section>
-    
 
-      
       <section className="panel">
         <h2>Resume / Portfolio Tips</h2>
 
@@ -358,9 +355,7 @@ import Laptop from '../components/devices/Laptop.jsx';
           </li>
           <li>EYC Presentation to Advisory Board: I can't access this one.</li>
         </ul>
-     </section>
+      </section>
     </>
   );
-
-
-
+}

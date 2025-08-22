@@ -33,7 +33,7 @@ function ScrollToTop() {
 
 
 
-<div>{darkMode ? "Dark" : "Light"}</div>;
+{/* <div>{darkMode ? "Dark" : "Light"}</div>; */}
  
        
 
@@ -65,7 +65,7 @@ function App() {
           <Route path="/case-studies/bel/" element={<BEL />} />
           <Route path="/case-studies/test/" element={<Test />} />
           <Route path="/style" element={<Style />} />
-           <Route path="/" element={<Home />} />
+
         </Routes>
       </div>
     </Router>
