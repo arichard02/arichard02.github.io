@@ -10,14 +10,33 @@ import WaveSections from './WaveSections';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-export default function Home() {
-  const [darkMode, setDarkMode] = React.useState(false);
+
+
+export default function Test() {
+  const [darkMode, setDarkMode] = useState(false);
+};
+
+const toggleDarkMode = () => setDarkMode(prev => !prev)
+
+ return (
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
+      <Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+    </div>
+  );
+
+
+  
 
   return (
     <>
       <Nav isHome={true} />
 
       {/* Button that toggles from light and dark  */}
+   
+{'}'}
+{'}'}
+ 
+
 
       <WaveSections />
 
@@ -60,3 +79,4 @@ export default function Home() {
     </>
   );
 }
+

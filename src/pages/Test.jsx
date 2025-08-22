@@ -10,8 +10,6 @@ import Laptop from '../components/devices/Laptop.jsx';
 
 
 
-export default function Test() {
-
 
   
   const features = [
@@ -57,6 +55,7 @@ export default function Test() {
   return (
     <>
       <Nav />
+      
       {/* Homepage 1 */}
       <section className="bg-[#185977]">
         {/* Left column */}
@@ -362,5 +361,6 @@ export default function Test() {
      </section>
     </>
   );
-}
+
+
 

@@ -14,6 +14,11 @@ import Style from './pages/Style';
 // import WavePath from './components/WavePath';
 
 
+
+
+
+
+
 // import "./styles.css";
 // ScrollToTop component to handle scroll restoration
 function ScrollToTop() {
@@ -25,6 +30,12 @@ function ScrollToTop() {
 
   return null;
 }
+
+
+
+<div>{darkMode ? "Dark" : "Light"}</div>;
+ 
+       
 
 function App() {
   return (
@@ -54,10 +65,12 @@ function App() {
           <Route path="/case-studies/bel/" element={<BEL />} />
           <Route path="/case-studies/test/" element={<Test />} />
           <Route path="/style" element={<Style />} />
+           <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
   );
 }
+
 
 export default App;
