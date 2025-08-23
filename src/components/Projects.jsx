@@ -22,8 +22,10 @@ const projects = [
     id: 'eyc',
     title: 'Embrace Your Crown',
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
-    fit: 'cover',
+    // fit: 'cover',
+    imageUrl: "/images/eyc/eyc2.png",
     color: '#f1ce71',
+     fit: 'cover',
     url: '/case-studies/eyc/',
   },
   {
