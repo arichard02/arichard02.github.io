@@ -44,7 +44,6 @@ function EmblaCarousel({
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {React.Children.map(children, (child) => {
-            console.log(child, child.type);
             // Check if the child is a CarouselSlide instance
             const isCarouselSlide = React.isValidElement(child) && child.type === CarouselSlide;
 

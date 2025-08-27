@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './Laptop.css';
 
-export default function Laptop({ imageUrl, width = '600px' }) {
+export default function Laptop({ imageUrl, width = '600px', showScrollIndicator = true }) {
   const [isDragging, setIsDragging] = useState(false);
   const [isHandleDragging, setIsHandleDragging] = useState(false);
   const [startY, setStartY] = useState(0);
@@ -139,18 +139,20 @@ export default function Laptop({ imageUrl, width = '600px' }) {
           onMouseDown={startImageDragging}
           onTouchStart={(e) => startImageDragging(e.touches[0])}
         />
-        <div className="scroll-indicator" ref={scrollIndicatorRef}>
-          <div
-            ref={scrollHandleRef}
-            className="scroll-handle"
-            style={{cursor: "grab", top: "0px"}}
-            onMouseDown={startHandleDragging}
-            onTouchStart={(e) => {
-              startHandleDragging(e.touches[0]);
-              e.preventDefault();
-            }}
-          />
-        </div>
+        {showScrollIndicator && (
+          <div className="scroll-indicator" ref={scrollIndicatorRef}>
+            <div
+              ref={scrollHandleRef}
+              className="scroll-handle"
+              style={{ cursor: 'grab', top: '0px' }}
+              onMouseDown={startHandleDragging}
+              onTouchStart={(e) => {
+                startHandleDragging(e.touches[0]);
+                e.preventDefault();
+              }}
+            />
+          </div>
+        )}
       </div>
       <div className="btm"></div>
     </div>

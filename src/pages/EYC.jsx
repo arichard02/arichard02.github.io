@@ -50,116 +50,20 @@ export default function EYC() {
       color: '',
       <Nav />
       {/* Homepage 1 */}
-      <section className="bg-[#f1ce71]">
-        {/* Left column */}
-        <div className="panel grid grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col justify-center items-center h-full">
-            <h2 className="text-white text-center">Embrace Your Crown</h2>
-            <p className="text-white text-center text-xl">Website Build & Design </p>
-          </div>
-
-          {/* Section 1 */}
-          <section className="bg-[white] flex flex-col justify-center items-center h-full">
-            <div className="panel one-column-layout">
-              <img src="/images/eyc/eyc2.png" />
-              {/* Left column */}
-              {/* <div>
-                <h2 className="mb-6">Services</h2>
-                <p>EYC text goes here...</p>
-              </div> */}
-
-              {/* Right column */}
-              {/* <div className="flex gap-5">
-                <Device width="200px" imageUrl="/images/cne/mobile/homepage.png" />
-                <Device
-                  width="200px"
-                  className="top-[-30px]"
-                  imageUrl="/images/cne/mobile/ccap.png"
-                />
-              </div> */}
-            </div>
-          </section>
-
-          {/* Section 2 */}
-          <section className="bg-[white]">
-            <div className="panel one-column-layout">
-              {/* Left column */}
-              {/* <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
-                <h2 className="mb-10">Products</h2>
-                {/* <p>text text text</p> */}
-              <img src="/images/eyc/eyc_1.png" />
-              {/* Right column */}
-              {/* <div className="flex gap-5">
-                <Device width="200px" imageUrl="/images/cne/mobile/homepage.png" />
-                <Device
-                  width="200px"
-                  className="top-[-30px]"
-                  imageUrl="/images/cne/mobile/ccap.png"
-                />
-              </div> */}
-            </div>
-          </section>
+      {/* Left column */}
+      <div className="panel grid grid-cols-1 md:grid-cols-3">
+        <div className="flex flex-col h-full">
+          <h2 className="text-center">Embrace Your Crown</h2>
+          <p className="text-center text-xl">Website Build & Design </p>
         </div>
-      </section>
-      {/* adding gradient section here */}
-      {/* <h3 className="h3-underlined">Portfolio Materials</h3>
-      <p className="body-text">
-        You've already done a ton of work on the portfolios. Please review the work you've already
-        done and incorporate the text, notes, and images you've already written:
-      </p>
-      <ul>
-        <li>Use "I" statements and strong action verbs for the work that you did.</li>
-        <li>
-          <a
-            className="link-highlight"
-            href="https://docs.google.com/document/d/16VYRdQNUN-sj2xRtOgsBOM7L-l5-qtN_frbHS4Sm-Gc/edit?tab=t.0#heading=h.n6p4t07y3g2w"
-            target="_blank"
-          >
-            Everyone's Bios
-          </a>
-        </li>
-        <li>
-          <a
-            className="link-highlight"
-            href="https://drive.google.com/drive/u/1/folders/1hnWrpHz3Jgo7aemEpWTppmd2h_a5-LBf"
-            target="_blank"
-          >
-            Case Study (Google Slides)
-          </a>
-        </li>
-        <li>
-          <a
-            className="link-highlight"
-            href="https://docs.google.com/spreadsheets/d/1lz_a0_cAMXsJCYw1dX8i5GjUDoGM1rt4oNR27M8jRGo/edit?gid=0#gid=0"
-            target="_blank"
-          >
-            Examples of other case studies
-          </a>
-        </li>
-        <li>
-          <a
-            className="link-highlight"
-            href="https://docs.google.com/presentation/d/1KGZ5IQGQ1-RL5s-ooUUNMmjTB4Yt1f3z1m4YlsiXfH0/edit?slide=id.p#slide=id.p"
-            target="_blank"
-          >
-            Visual design 101: How to develop your own look and feel while following best design
-            practices.
-          </a>
-        </li>
-        <li>
-          <a
-            className="link-highlight"
-            href="https://docs.google.com/presentation/d/1f-tours2Cer9_UUTwNX6jyk17LYqbu1PUSugN0K2pxg/edit?usp=sharing"
-            target="_blank"
-          >
-            AUX Presentation to Advisory Board
-          </a>
-        </li>
-        <li>EYC Presentation to Advisory Board: I can't access this one.</li>
-      </ul> */}
-      
-      
-      <div style={{ backgroundImage: 'bg-gray-200' }}>
+
+        {/* Section 1 */}
+
+        <section className="col-span-2 bg-[white] flex flex-col h-full">
+          <img src="/images/eyc/eyc_1.png" />
+        </section>
+      </div>
+      <div className="bg-yellow-50">
         {/* <div style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}> */}
         <div className="panel">
           <section className="three-column-layout">
@@ -191,36 +95,55 @@ export default function EYC() {
                 conversion-friendly user experience that supported product visibility, service
                 bookings, and brand recognition. Key strategic goals included:
               </p>
-               <ul>
-                  <li>Brand Positioning: Define and communicate her unique value in a competitive beauty market</li>
-                  <li>
-                    User Experience (UX): Ensure easy navigation, fast access to services, and mobile responsiveness
-                  </li>
-                  <li>Conversion Optimization: Encourage product purchases and appointment bookings through intuitive UI/UX design</li>
-                  <li>
-                    Scalability: Build on a platform that can grow with her business as new services or products are added
-                  </li>
-                </ul>
+              <ul>
+                <li>
+                  Brand Positioning: Define and communicate her unique value in a competitive beauty
+                  market
+                </li>
+                <li>
+                  User Experience (UX): Ensure easy navigation, fast access to services, and mobile
+                  responsiveness
+                </li>
+                <li>
+                  Conversion Optimization: Encourage product purchases and appointment bookings
+                  through intuitive UI/UX design
+                </li>
+                <li>
+                  Scalability: Build on a platform that can grow with her business as new services
+                  or products are added
+                </li>
+              </ul>
             </div>
 
             <div>
               <h2 className="h2-small text-center mt-10 mb-5">The Result</h2>
               <p className="text-lg">
-                Upon launch, the website successfully positioned the client’s brand in the beauty and grooming space, with strong early engagement and positive client feedback. Key outcomes included:
+                Upon launch, the website successfully positioned the client’s brand in the beauty
+                and grooming space, with strong early engagement and positive client feedback. Key
+                outcomes included:
               </p>
-               <ul>
-                  <li>Professional Online Presence: A visually compelling site that clearly communicates services and brand values</li>
-                  <li>
-                    Streamlined Appointment Booking: Reduction in manual scheduling, improved client experience
-                  </li>
-                  <li>Increased Product Exposure: Clear product display and shopping options led to early online sales</li>
-                  <li>
-                    Client Autonomy: Easy content updates and management without needing technical support
-                  </li>
-                </ul>
-                <p>
-                  The client reported a noticeable increase in appointment bookings and customer interest within the first few weeks of launch.
-                </p>
+              <ul>
+                <li>
+                  Professional Online Presence: A visually compelling site that clearly communicates
+                  services and brand values
+                </li>
+                <li>
+                  Streamlined Appointment Booking: Reduction in manual scheduling, improved client
+                  experience
+                </li>
+                <li>
+                  Increased Product Exposure: Clear product display and shopping options led to
+                  early online sales
+                </li>
+                <li>
+                  Client Autonomy: Easy content updates and management without needing technical
+                  support
+                </li>
+              </ul>
+              <p>
+                The client reported a noticeable increase in appointment bookings and customer
+                interest within the first few weeks of launch.
+              </p>
             </div>
           </section>
         </div>
@@ -301,13 +224,14 @@ export default function EYC() {
               ))}
             </dl>
           </section>
-          <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}><section></section>
+          <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
+            <section></section>
             <div className="panel max-w-4xl m-auto">
               <h2 className="text-3xl font-abril mb-6 text-gray-900">Services</h2>
               <p className="text-lg text-gray-900 mb-12"></p>
               <div>
-              <img className="w-full" src="/images/eyc/eyc_1.png" alt="CNE Impact" />
-            </div>
+                <img className="w-full" src="/images/eyc/eyc_1.png" alt="CNE Impact" />
+              </div>
             </div>
           </section>
         </div>

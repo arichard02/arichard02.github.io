@@ -1,7 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './Device.css';
 
-const Device = ({ imageUrl, width, className = '', deviceType = 'iphone' }) => {
+const Device = ({
+  imageUrl,
+  width,
+  className = '',
+  deviceType = 'iphone',
+  showScrollIndicator = true,
+}) => {
   const [isDragging, setIsDragging] = useState(false);
   const [isHandleDragging, setIsHandleDragging] = useState(false);
   const [startY, setStartY] = useState(0);
@@ -139,17 +145,19 @@ const Device = ({ imageUrl, width, className = '', deviceType = 'iphone' }) => {
         onMouseDown={startImageDragging}
         onTouchStart={(e) => startImageDragging(e.touches[0])}
       />
-      <div className="scroll-indicator" ref={scrollIndicatorRef}>
-        <div
-          ref={scrollHandleRef}
-          className="scroll-handle"
-          onMouseDown={startHandleDragging}
-          onTouchStart={(e) => {
-            startHandleDragging(e.touches[0]);
-            e.preventDefault();
-          }}
-        />
-      </div>
+      {showScrollIndicator && (
+        <div className="scroll-indicator" ref={scrollIndicatorRef}>
+          <div
+            ref={scrollHandleRef}
+            className="scroll-handle"
+            onMouseDown={startHandleDragging}
+            onTouchStart={(e) => {
+              startHandleDragging(e.touches[0]);
+              e.preventDefault();
+            }}
+          />
+        </div>
+      )}
     </figure>
   );
 };

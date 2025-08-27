@@ -1,6 +1,6 @@
 // src/pages/Style.jsx
-import React from "react";
-import "./Style.css"; // ✅ import the CSS file
+import React from 'react';
+// import "./Style.css"; // ✅ import the CSS file
 
 const Style = () => {
   return (
