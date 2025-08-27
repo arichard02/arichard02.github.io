@@ -220,7 +220,13 @@ export default function CNE() {
             through initiatives like home visits, developmental screenings, and trauma-informed
             care.
           </p>
-          <img className="w-full" src="/images/cne/desktop/CNE_Impact.png" alt="CNE Impact" />
+          {/* <img className="w-full" src="/images/cne/desktop/CNE_Impact.png" alt="CNE Impact" /> */}
+          <Laptop
+            width="100%"
+            imageUrl="/images/cne/desktop/impact-higher-def.gif"
+            showScrollIndicator={false}
+          />
+          {/* <img className="w-[400px]" src="/images/cne/desktop/impact.gif" alt="CNE Impact" /> */}
         </div>
       </section>
     </>
