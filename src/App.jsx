@@ -11,6 +11,7 @@ import Bio from './pages/Bio';
 import Tips from './pages/Tips';
 import AnimatedSection from './pages/AnimatedSection';
 import Style from './pages/Style';
+import Practice from './pages/Practice';
 // import WavePath from './components/WavePath';
 
 
@@ -65,6 +66,7 @@ function App() {
           <Route path="/case-studies/bel/" element={<BEL />} />
           <Route path="/case-studies/test/" element={<Test />} />
           <Route path="/style" element={<Style />} />
+          <Route path="/case-studies/practice/" element={<Practice/>} />
 
         </Routes>
       </div>

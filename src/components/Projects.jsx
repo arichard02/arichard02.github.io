@@ -45,6 +45,14 @@ const projects = [
     color: '#305CDE',
     url: '/case-studies/test/',
   },
+  {
+    id: 'practice',
+    title: 'Practice Page',
+    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    fit: 'cover',
+    color: '#305CDE',
+    url: '/case-studies/practice/',
+  },
 ];
 
 const Projects = () => {

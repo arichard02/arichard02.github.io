@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <Image
             width={200}
-            src="/images/bio/bio-pic.jpg" alt="Bio Pic"
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
         </div>
       </div>
