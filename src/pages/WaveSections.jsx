@@ -21,27 +21,45 @@ const WaveSections = () => {
           ></path>
         </svg>
         <section className="panel-wave">
-          <h1>Adwaina</h1>
+          {/* <h1>Adwaina</h1>
           <div
             style={{ marginTop: '20px', display: 'flex', gap: '35px', justifyContent: 'center' }}
-          >
+          > */}
             {/* Child 1 */}
-            <div className="w-[100px] flex flex-col items-center justify-center">
+            {/* <div className="w-[100px] flex flex-col items-center justify-center">
               <a href="#" style={{ fontSize: '50px', color: '#0077b5' }}>
                 <FontAwesomeIcon icon={faGithub} />
               </a>
               <p className="text-center">Developer</p>
-            </div>
+            </div> */}
 
             {/* Child 2 */}
-            <div className="w-[100px] flex flex-col items-center justify-center">
+            {/* <div className="w-[100px] flex flex-col items-center justify-center">
               <a href="#" style={{ fontSize: '50px', color: '#0077b5' }}>
                 <FontAwesomeIcon icon={faCode} />
               </a>
               <p className="text-center">Front End Developer</p>
-            </div>
+            </div> */}
 
             {/* Child 3 */}
+
+
+<div className="grid-top container bg-yellow-50 p-10">
+          <div className="grid cell grid-cell-offset-md-1 grid-cell-md-11 ">
+          {/* <div className="panel grid grid-cols-3 gap-8"> */}
+            <h1 className=" col-span-text-center text-blue-600 text-7xl ">Adwaina Richardson</h1>
+            <h3 className="text-center text-blue-600 text-5xl p-10" >Front-End Developer</h3>
+            <p className="body-text-large max-w-2xl mx-auto text-center">
+              "Transforming ideas into intuitive, user-focused digital experiences through
+              creativity, collaboration, and seamless code."
+            </p>
+          </div>
+       
+
+
+
+
+
             <div className="w-[100px] flex flex-col items-center justify-center">
               <a href="#" style={{ fontSize: '50px', color: '#0077b5' }}>
                 <FontAwesomeIcon icon={faPalette} />

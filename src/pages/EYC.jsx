@@ -47,11 +47,11 @@ export default function EYC() {
   return (
     // all react components have to return a single element
     <>
-      color: '',
+      
       <Nav />
       {/* Homepage 1 */}
       {/* Left column */}
-      <div className="panel grid grid-cols-1 md:grid-cols-3">
+      <div className="panel grid grid-cols-1 md:grid-cols-3 bg-yellow-50 h-full">
         <div className="flex flex-col h-full">
           <h2 className="text-center">Embrace Your Crown</h2>
           <p className="text-center text-xl">Website Build & Design </p>
@@ -149,7 +149,8 @@ export default function EYC() {
         </div>
       </div>
       {/* add role */}
-      <div className="bg-[#f1ce71]">
+      {/* <div className="bg-[#f1ce71-200]"> */}
+       <div className="bg-yellow-50">
         <div className="panel">
           <section className="one-column-layout">
             <div className="bg-gray-200">
@@ -223,19 +224,22 @@ export default function EYC() {
                 </div>
               ))}
             </dl>
-          </section>
-          <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
+            </section>
+              </div>
+</div>
+          {/* <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}> */}
+         
+          <section className='bg-yellow-50'>
             <section></section>
             <div className="panel max-w-4xl m-auto">
               <h2 className="text-3xl font-abril mb-6 text-gray-900">Services</h2>
               <p className="text-lg text-gray-900 mb-12"></p>
               <div>
-                <img className="w-full" src="/images/eyc/eyc_1.png" alt="CNE Impact" />
+                <img className="w-full" src="/images/eyc/eyc_1.png" alt="EYC Hero" />
               </div>
             </div>
           </section>
-        </div>
-      </div>
+        
     </>
   );
 }

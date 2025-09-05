@@ -3,6 +3,7 @@ import Device from '../components/devices/Device.jsx';
 import Nav from '../components/Nav.jsx';
 import { Carousel } from 'antd';
 import { Divider } from 'antd';
+import WaveSections from './WaveSections';
 import EmblaCarousel from '../components/carousel/Carousel.jsx';
 import CarouselSlide from '../components/carousel/CarouselSlide.jsx';
 import MyDrawer from '../components/MyDrawer.jsx';
@@ -11,6 +12,8 @@ import Laptop from '../components/devices/Laptop.jsx';
 // import 'antd/dist/antd.css';
 import { Row, Col } from 'antd';
 import { Grid } from "antd";
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 const DemoBox = (props) => <p className={`height-${props.value}`}>{props.children}</p>;
 
 const features = [
@@ -57,6 +60,14 @@ export default function Practice() {
     <>
       <Nav />
 
+
+        <Nav isHome={true} />
+
+      {/* Button that toggles from light and dark  */}
+
+      <WaveSections />
+
+      
       <section>
         <div className="grid-top container bg-yellow-50 p-10">
           <div className="grid cell grid-cell-offset-md-1 grid-cell-md-11 ">
@@ -100,30 +111,57 @@ export default function Practice() {
           that value thoughtful design, clear communication, and purposeful development.
         </p>
       </div>
+      
 
-       <section className="bg-light bg-blue-100 mg-30">
-        <div>
-          <Row>
-            <Col span={8}>col-8</Col>
-            <Col span={8} offset={8}>
-              col-8
-            </Col>
-          </Row>
-          <Row>
-            <Col span={6} offset={6}>
-              col-6 col-offset-6
-            </Col>
-            <Col span={6} offset={6}>
-              col-6 col-offset-6
-            </Col>
-          </Row>
-          <Row>
-            <Col span={12} offset={6}>
-              col-12 col-offset-6
-            </Col>
-          </Row>
+       {/* Introduction */}
+      <div style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
+        <div className="panel">
+          <section className="two-column-layout">
+            <div>
+              <h2 className="h2-small">The Challenge</h2>
+              <p className="text-lg">
+                The client, a new beauty entrepreneur, needed a website that not only effectively
+                showcased her diverse product line and grooming services but also provided a
+                seamless, easy-to-use appointment booking system. The challenge was to create a
+                visually compelling, brand-aligned online presence that appealed to a wide audience
+                while ensuring smooth functionality across devices.
+              </p>
+            </div>
+            <div>
+              <h2 className="h2-small">The Goal</h2>
+              <p className="text-lg">
+                The goal was to design and develop a fully responsive, user-friendly website that
+                effectively highlights the client’s beauty products and grooming services while
+                simplifying the appointment booking process. The site needed to establish a unique
+                and cohesive brand identity through an elegant, accessible design that would engage
+                a diverse audience, including potential customers and community stakeholders.
+              </p>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
+
+      <div className="bg-gray-50">
+        <div className="panel">
+          <section className="one-column-layout">
+            <div className="bg-gray-200">
+              <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
+                <p>
+                  <img src="" />
+                </p>
+              </div>
+            </div>
+            <dl className="mt-10 space-y-8 text-gray-900">
+              {features.map((feature) => (
+                <div key={feature.name} className="relative">
+                  <dt className="inline font-semibold text-gray-900">{feature.name}</dt>{' '}
+                  <dd className="inline">{feature.description}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        </div>
+      </div>
     </>
   );
 }

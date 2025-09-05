@@ -82,9 +82,9 @@ export default function Nav({ isHome = false }) {
           </Space>
         }
       >
-        <p>Drawer #1...</p>
+        {/* <p>Drawer #1...</p>
         <p>Drawer #2...</p>
-        <p>Drawer #3...</p>
+        <p>Drawer #3...</p> */}
         <Projects />
       </Drawer>
     </>

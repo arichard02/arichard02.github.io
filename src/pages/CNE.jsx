@@ -168,7 +168,7 @@ export default function CNE() {
         <div className="panel two-column-layout">
           {/* Left column */}
           <div>
-            <h2 className="text-3xl font-abril mb-6 text-gray-900">Program Pages</h2>
+            <h2 className="text-3xl font-abril mb-6 text-gray-900 ">Program Pages</h2>
             <p className="text-lg text-gray-900">
               To help parents and caregivers understand the importance of early childhood education,
               we created a simple program overview page, organized by age group. This page provides

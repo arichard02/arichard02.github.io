@@ -15,16 +15,17 @@ export default function Home() {
 
   return (
     <>
+    
       <Nav isHome={true} />
 
       {/* Button that toggles from light and dark  */}
 
       <WaveSections />
-
-      <button style={{ backgroundColor: 'black', color: 'white' }}>Dark Mode</button>
+    
+      {/* <button style={{ backgroundColor: 'black', color: 'white' }}>Dark Mode</button> */}
 
       {/* Top Banner */}
-      <div className="bg-background-50 border">
+      <div className="bg-background-50 border bg-yellow-50">
         <div className="panel grid grid-cols-3 gap-8">
           <div className="col-span-2">
             <h1 className="text-center text-blue-600 text-7xl">Adwaina Richardson</h1>
@@ -35,7 +36,7 @@ export default function Home() {
           </div>
           <Image
             width={200}
-            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+            src="/images/bio/bio-pic.jpg" alt="Bio Pic"
           />
         </div>
       </div>

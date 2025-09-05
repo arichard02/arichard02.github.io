@@ -24,7 +24,7 @@ body {
 
 .panel-wave {
   position: relative;
-  z-index: 1; /* foreground */
+  z-index: 1000; /* foreground */
   display: flex;
   flex-direction: column;
   justify-content: center;
