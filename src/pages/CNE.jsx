@@ -17,14 +17,14 @@ export default function CNE() {
       description: 'Project Manager | UX/UI Designer | WordPress Developer ',
     },
     {
-      name: 'My Responsililities',
+      name: 'My Responsibilities',
       description:
         'Led a team of five web developers to implement a responsive web application using Webflow, ensuring seamless experiences across desktop, tablet, and mobile devices.',
     },
-    {
-      description:
-        'Directed the creation and implementation of scalable, secure solutions while adhering to industry best practices in coding and agile methodologies, optimizing performance and maintaining high standards.',
-    },
+    // {
+    //   description:
+    //     'Directed the creation and implementation of a scalable, secure website, adhering to industry best practices using agile methodologies.',
+    // },
     {
       name: 'The Team',
       description:
@@ -76,11 +76,11 @@ export default function CNE() {
           </div>
 
           <div>
-            <h2 className="h2-small text-white">CNE</h2>
+            <h2 className="h2-small text-white">Childcare Network of Evanston</h2>
             <p className="text-lg text-white">
-              Community Nursery Education (CNE) has been a cornerstone of early childhood education
-              since 1970, dedicated to ensuring that every child in our community—from birth through
-              age five—has access to high-quality early learning and care.
+              Childcare Network of Evanston (CNE) has been a cornerstone of early childhood
+              education since 1970, dedicated to ensuring that every child in our community—from
+              birth through age five—has access to high-quality early learning and care.
             </p>
           </div>
         </div>
@@ -137,29 +137,30 @@ export default function CNE() {
 
       {/* Homepage 1 */}
       <section className="bg-[#185977]">
-        {/* Left column */}
-        <div className="panel grid grid-cols-1 md:grid-cols-3">
-          <div>
-            <h2 className="h2-small text-white">Homepage</h2>
-            <p className="text-lg text-white">
-              We redesigned the CNE homepage to be welcoming to a wide range of visitors, including
-              families, community educators, and donors. The hompage showcases CNE's services,
-              current initiatives, and impact through an engaging, accessible design. It also
-              highlights key accomplishments, answers common questions, and offers an easy way to
-              connect.
-            </p>
-            <p className="text-lg text-white">TODO: Add the mobile version of the homepage</p>
-          </div>
-
-          {/* Right column */}
-          <div className="flex gap-2 mt-5 md:mt-0  md:col-span-2">
-            <Laptop
-              width="80%"
-              imageUrl="./images/cne/desktop/carousel.gif"
-              showScrollIndicator={false}
-            />
-            {/* <Device width="200px" imageUrl="/images/cne/mobile/homepage.png" />
+        <div className="panel">
+          <h2 className="h2-small text-white">Homepage</h2>
+          <p className="text-lg text-white mb-6">
+            We redesigned the CNE homepage to be welcoming to a wide range of visitors, including
+            families, community educators, and donors. The homepage showcases CNE's services,
+            current initiatives, and impact through an engaging, accessible design. It also
+            highlights key accomplishments, answers common questions, and offers an easy way to
+            connect.
+          </p>
+          {/* Left column */}
+          <div className="grid grid-cols-1 md:grid-cols-4">
+            <div className="flex justify-center md:justify-end">
+              <Device width="200px" imageUrl="/images/cne/mobile/homepage.png" />
+            </div>
+            {/* Right column */}
+            <div className="flex gap-2 mt-5 md:mt-0  md:col-span-3">
+              <Laptop
+                width="80%"
+                imageUrl="./images/cne/desktop/carousel.gif"
+                showScrollIndicator={false}
+              />
+              {/* <Device width="200px" imageUrl="/images/cne/mobile/homepage.png" />
             <Device width="200px" className="top-[-30px]" imageUrl="/images/cne/mobile/ccap.png" /> */}
+            </div>
           </div>
         </div>
       </section>
@@ -200,14 +201,15 @@ export default function CNE() {
               enhance usability and accessibility, I redesigned the website’s navigation to make it
               more intuitive and user-friendly. Key updates included streamlining the menu structure
               for easier access to key content and reducing the number of clicks required to reach
-              important pages. </p>
-              
-              <p className="text-lg text-gray-900">
-                Recognizing the needs of a diverse user base, I also integrated a
-              multilingual dropdown menu that allows users to instantly translate the entire site
-              into several languages. This feature ensures that non-English-speaking families can
-              fully access and engage with the site's resources—promoting inclusivity and better
-              community outreach.
+              important pages.{' '}
+            </p>
+
+            <p className="text-lg text-gray-900">
+              Recognizing the needs of a diverse user base, I also integrated a multilingual
+              dropdown menu that allows users to instantly translate the entire site into several
+              languages. This feature ensures that non-English-speaking families can fully access
+              and engage with the site's resources—promoting inclusivity and better community
+              outreach.
             </p>
           </div>
 
@@ -240,6 +242,22 @@ export default function CNE() {
             showScrollIndicator={false}
           />
           {/* <img className="w-[400px]" src="/images/cne/desktop/impact.gif" alt="CNE Impact" /> */}
+        </div>
+      </section>
+
+      {/* Section 3 */}
+      <section className="bg-gray-50">
+        {/* Left column */}
+        <div className="panel max-w-4xl m-auto">
+          <h2 className="text-3xl font-abril mb-6">Reflection</h2>
+          <p className="text-lg mb-6">
+            Here is where you can talk about how you made sure that the website...
+          </p>
+          <ul>
+            <li>Adhered to industry best practices</li>
+            <li>Used agile methodologies</li>
+            <li>Ensured the website was delivered on time and within budget</li>
+          </ul>
         </div>
       </section>
     </>
