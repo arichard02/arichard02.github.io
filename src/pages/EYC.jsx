@@ -51,7 +51,8 @@ export default function EYC() {
       <Nav />
       {/* Homepage 1 */}
       {/* Left column */}
-      <div className="panel grid grid-cols-1 md:grid-cols-3 bg-yellow-50 h-full">
+      <div className="bg-background-50 border bg-yellow-50">
+        {/* <div className="panel grid grid-cols-1 md:grid-cols-3 bg-yellow-50 h-full"></div> */}
         <div className="flex flex-col h-full">
           <h2 className="text-center">Embrace Your Crown</h2>
           <p className="text-center text-xl">Website Build & Design </p>
@@ -140,10 +141,12 @@ export default function EYC() {
                   support
                 </li>
               </ul>
-              <p>
-                The client reported a noticeable increase in appointment bookings and customer
-                interest within the first few weeks of launch.
+              <div>
+              <p className="h2-small text-center mt-10 mb-5">
+                "The client reported a noticeable increase in appointment bookings and customer
+                interest within the first few weeks of launch."
               </p>
+              </div>
             </div>
           </section>
         </div>
@@ -229,13 +232,14 @@ export default function EYC() {
 </div>
           {/* <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}> */}
          
-          <section className='bg-yellow-50'>
+          <section className='bg-yellow-100'>
             <section></section>
             <div className="panel max-w-4xl m-auto">
               <h2 className="text-3xl font-abril mb-6 text-gray-900">Services</h2>
               <p className="text-lg text-gray-900 mb-12"></p>
               <div>
-                <img className="w-full" src="/images/eyc/eyc_1.png" alt="EYC Hero" />
+                {/* Add screenshot of services */}
+                {/* <img className="w-full" src="/images/eyc/eyc_1.png" alt="EYC Hero" /> */}
               </div>
             </div>
           </section>

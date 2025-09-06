@@ -15,13 +15,13 @@ export default function Home() {
 
   return (
     <>
-    
+    <section class>
       <Nav isHome={true} />
 
       {/* Button that toggles from light and dark  */}
 
       <WaveSections />
-    
+    </section>
       {/* <button style={{ backgroundColor: 'black', color: 'white' }}>Dark Mode</button> */}
 
       {/* Top Banner */}

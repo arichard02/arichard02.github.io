@@ -50,9 +50,12 @@ export default function CNE() {
       {/* Homepage 1 */}
       <section className="bg-[#185977]">
         {/* Left column */}
-        <div className="panel grid grid-cols-1 md:grid-cols-1">
-          <div className="panel">
-            <EmblaCarousel>
+        <div className="panel grid grid-cols-2 md:grid-cols-2">
+          <div className="two-column-layout">
+            <p>
+              <img src="./images/cne/cne-hp.png" />
+            </p>
+            {/* <EmblaCarousel>
               <CarouselSlide className="py-10">
                 <Laptop width="80%" imageUrl="./images/cne/desktop/c1.png" />
                 <h3 className="text-center">Slide 1</h3>
@@ -69,17 +72,15 @@ export default function CNE() {
                 Slide 4
                 <Laptop width="80%" imageUrl="./images/cne/desktop/c4.png" />
               </CarouselSlide>
-            </EmblaCarousel>
+            </EmblaCarousel> */}
           </div>
 
           <div>
-            <h2 className="h2-small text-white">Homepage</h2>
+            <h2 className="h2-small text-white">CNE</h2>
             <p className="text-lg text-white">
-              We redesigned the CNE homepage to be welcoming to a wide range of visitors, including
-              families, community educators, and donors. The hompage showcases CNE's services,
-              current initiatives, and impact through an engaging, accessible design. It also
-              highlights key accomplishments, answers common questions, and offers an easy way to
-              connect.
+              Community Nursery Education (CNE) has been a cornerstone of early childhood education
+              since 1970, dedicated to ensuring that every child in our community—from birth through
+              age five—has access to high-quality early learning and care.
             </p>
           </div>
         </div>
@@ -115,14 +116,14 @@ export default function CNE() {
       <div className="bg-gray-50">
         <div className="panel">
           <section className="two-column-layout">
-            <div className="bg-red-100">
-              <div className="p-8 flex justify-center  items-center h-full min-h-[300px]">
-                <p>
-                  <img src="./images/cne/desktop/p4a.png" />
-                </p>
-              </div>
+            {/* <div className="bg-red-100"> */}
+            <div className="p-8 flex justify-center  items-center h-full min-h-[300px]">
+              <p>
+                <img src="./images/cne/cne.png" />
+              </p>
             </div>
-            <dl className="mt-10 space-y-6 text-gray-900">
+            {/* </div> */}
+            <dl className="mt-5 space-y-6 text-gray-900">
               {features.map((feature, index) => (
                 <div key={index} className="relative">
                   <dt className="inline font-semibold text-gray-900">{feature.name}</dt>{' '}
@@ -164,7 +165,7 @@ export default function CNE() {
       </section>
 
       {/* Section 2 */}
-      <section className="bg-[#F9F9F9]">
+      <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
         <div className="panel two-column-layout">
           {/* Left column */}
           <div>
@@ -195,7 +196,18 @@ export default function CNE() {
           <div>
             <h2 className="text-3xl font-abril mb-6 text-gray-900">Navigation and Translation</h2>
             <p className="text-lg text-gray-900">
-              Say some stuff about navigation and translation featured.
+              Improving Accessibility and User Experience Through Navigation and Language Options To
+              enhance usability and accessibility, I redesigned the website’s navigation to make it
+              more intuitive and user-friendly. Key updates included streamlining the menu structure
+              for easier access to key content and reducing the number of clicks required to reach
+              important pages. </p>
+              
+              <p className="text-lg text-gray-900">
+                Recognizing the needs of a diverse user base, I also integrated a
+              multilingual dropdown menu that allows users to instantly translate the entire site
+              into several languages. This feature ensures that non-English-speaking families can
+              fully access and engage with the site's resources—promoting inclusivity and better
+              community outreach.
             </p>
           </div>
 
@@ -211,10 +223,11 @@ export default function CNE() {
       </section>
 
       {/* Section 3 */}
-      <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
+      <section className="bg-[#185977]">
+        {/* Left column */}
         <div className="panel max-w-4xl m-auto">
-          <h2 className="text-3xl font-abril mb-6 text-gray-900">Impact</h2>
-          <p className="text-lg text-gray-900 mb-12">
+          <h2 className="text-3xl font-abril mb-6 text-white">Impact</h2>
+          <p className="text-lg text-white mb-12">
             This page highlights CNE's impactful role as a leader in early childhood education. It
             shows their dedication to providing every child with a Strong Start to Kindergarten
             through initiatives like home visits, developmental screenings, and trauma-informed

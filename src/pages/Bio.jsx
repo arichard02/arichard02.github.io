@@ -31,7 +31,7 @@ const Bio = () => {
               for the entire team.
             </p>
           </div>
-          <div className="bg-red-700 rounded-xl">
+          <div className="bg-blue-700 rounded-xl">
             <div className="p-8 flex justify-center items-center h-full min-h-[300px]">
               <p>
                 <img className="w-full sha

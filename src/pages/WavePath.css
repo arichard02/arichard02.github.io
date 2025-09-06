@@ -5,7 +5,7 @@
 
 .line {
     fill: none;
-    stroke-width: 3;
+    stroke-width: 2;
     stroke: rgb(78, 78, 78);
     vector-effect: non-scaling-stroke;
 }

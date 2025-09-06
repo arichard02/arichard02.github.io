@@ -67,7 +67,7 @@ export default function Practice() {
 
       <WaveSections />
 
-      
+
       <section>
         <div className="grid-top container bg-yellow-50 p-10">
           <div className="grid cell grid-cell-offset-md-1 grid-cell-md-11 ">
@@ -113,7 +113,8 @@ export default function Practice() {
       </div>
       
 
-       {/* Introduction */}
+       {/* Challenge and Goal Section */}
+       <section>
       <div style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
         <div className="panel">
           <section className="two-column-layout">
@@ -141,6 +142,7 @@ export default function Practice() {
         </div>
       </div>
 
+        {/* Grey Box Area */}
       <div className="bg-gray-50">
         <div className="panel">
           <section className="one-column-layout">
@@ -151,6 +153,8 @@ export default function Practice() {
                 </p>
               </div>
             </div>
+
+            {/* Feature Section */}
             <dl className="mt-10 space-y-8 text-gray-900">
               {features.map((feature) => (
                 <div key={feature.name} className="relative">
@@ -162,6 +166,7 @@ export default function Practice() {
           </section>
         </div>
       </div>
+       </section>
     </>
   );
 }
