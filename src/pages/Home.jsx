@@ -25,7 +25,7 @@ export default function Home() {
       {/* <button style={{ backgroundColor: 'black', color: 'white' }}>Dark Mode</button> */}
 
       {/* Top Banner */}
-      <div className="bg-background-50 border bg-yellow-50">
+      {/* <div className="border bg-yellow-50">
         <div className="panel grid grid-cols-3 gap-8">
           <div className="col-span-2">
             <h1 className="text-center text-blue-600 text-7xl">Adwaina Richardson</h1>
@@ -39,7 +39,7 @@ export default function Home() {
             src="/images/bio/bio-pic.jpg" alt="Bio Pic"
           />
         </div>
-      </div>
+      </div> */}
 
       {/* About Section */}
       <div className="panel">
@@ -55,6 +55,7 @@ export default function Home() {
         </p>
       </div>
 
+        
       <Projects />
     </>
   );

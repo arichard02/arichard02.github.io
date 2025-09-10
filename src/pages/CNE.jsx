@@ -50,7 +50,8 @@ export default function CNE() {
       {/* Homepage 1 */}
       <section className="bg-[#185977]">
         {/* Left column */}
-        <div className="panel grid grid-cols-2 md:grid-cols-2">
+        {/* <div className="panel grid grid-cols-2 md:grid-cols-2"> */}
+        <div className='p-20 flex flex-col h-full'>
           <div className="two-column-layout">
             <p>
               <img src="./images/cne/cne-hp.png" />
@@ -75,14 +76,11 @@ export default function CNE() {
             </EmblaCarousel> */}
           </div>
 
-          <div>
-            <h2 className="h2-small text-white">Childcare Network of Evanston</h2>
-            <p className="text-lg text-white">
-              Childcare Network of Evanston (CNE) has been a cornerstone of early childhood
-              education since 1970, dedicated to ensuring that every child in our community—from
-              birth through age five—has access to high-quality early learning and care.
-            </p>
-          </div>
+
+               <div className="p-20 flex flex-col h-full">
+         <h2 className="h2-small text-white">Childcare Network of Evanston</h2>
+          <p className="text-center text-xl">Website Rebuild & Design </p>
+        </div>
         </div>
       </section>
 

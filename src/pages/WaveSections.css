@@ -5,7 +5,7 @@ body {
 
 .section-wrapper {
     position: relative;
-    height: 100vh;
+     min-height: 100vh;
     overflow: hidden;
 }
 .custom-svg {
@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     /* Our stuff */
     position: absolute;
-    /* top: 0; */
+    top: 75px;
     left: 0;
     z-index: 0;
 }
@@ -42,9 +42,9 @@ body {
     height: auto;
 } */
 
-.flipped {
+/* .flipped {
     transform: scaleY(-1);
-}
+} */
 
 .panel-wave {
     position: relative;
@@ -69,8 +69,154 @@ body {
     animation-fill-mode: forwards;
 }
 
+.bx {
+    font-family: boxicons !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.containerr {
+    text-align: center;
+    display: flex
+;
+    justify-content: center;
+    /* background: url(./pattern-lines.svg); */
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    /* margin-bottom: -60px; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background: url(./pattern-lines.svg); */
+}
+
+#cont {
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 40px;
+}
+
+#cont {
+    gap: 25px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1024px) {
+    .uji {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+.autoShow {
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
 @keyframes line {
     to {
         stroke-dashoffset: 0;
     }
 }
+
+/* Skill icons */
+.reveal-icon {
+  font-size: 48px;
+  margin: 16px;
+  color: #2a93f5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.reveal-icon:hover {
+  color: #f7df1e; /* JavaScript yellow or pick any */
+  transform: scale(1.2) rotate(5deg);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+
+.bxl-javascript:hover { color: #f7df1e; }
+.bxl-html5:hover { color: #e34c26; }
+.bxl-css3:hover { color: #2965f1; }
+.bxl-typescript:hover { color: #3178c6; }
+.bxl-figma:hover { color: #a259ff; }
+.bxl-nodejs:hover { color: #3c873a; }
+.bxl-react:hover { color: #61dafb; }
+.bxl-tailwind-css:hover { color: #38bdf8; }
+
+/* Verticale on mobile */
+@media (max-width: 600px) {
+  #cont {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Incons under tagline */
+.autoshow i {
+  font-size: 24px;
+  margin-right: 8px;
+  color: red;
+}
+
+#cont {
+  display: flex;
+  gap: 24px; /* adds spacing between items */
+  align-items: center;
+  justify-content: center; /* optional: center horizontally */
+  flex-wrap: wrap; /* optional: wrap on smaller screens */
+  padding: 20px;
+}
+
+.autoshow {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: red;
+}
+
+.autoshow i {
+  font-size: 28px;
+  margin-right: 8px; /* space between icon and text */
+}
+
+/* Add animation to icons */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Verticale on mobile */
+@media (max-width: 600px) {
+  #cont {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/*  */

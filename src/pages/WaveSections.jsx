@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faPalette, faCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
+
 const WaveSections = () => {
   return (
     <>
@@ -13,19 +14,20 @@ const WaveSections = () => {
           data-name="Modo de aislamiento"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1399.32 163.87"
-          class="custom-svg second-svg"
+          className="custom-svg second-svg"
         >
           <path
             className="line"
             d="m1399.17,37.1c-87.27-27.1-183.66,2.85-259.54,53.78-11.17,7.5-22.38,15.81-29.01,27.52-6.63,11.71-7.49,27.69,1.37,37.81,8.86,10.12,28.35,9.53,33.81-2.77,5.16-11.62-4.8-25.42-16.94-29.21s-25.23-.58-37.58,2.44c-94.45,23.14-191.55,35.45-288.78,36.62-128.29,1.54-261.08-17.89-369.59-86.35-25.31-15.97-49.13-34.5-76.03-47.61-34.22-16.69-72.32-24.05-110.26-27.21C211.9-.77,176.62-.24,142.65,7.51c-37.08,8.46-71.69,25.29-105.05,43.54C18.9,61.28-2.25,77.19.79,98.28"
             fill="none"
             stroke="currentColor"
-            stroke-width="4px"
-            stroke-dasharray="4000"
-            stroke-dashoffset="4000"
+            strokeWidth="4px"
+            strokeDasharray="4000"
+            strokeDashoffset="4000"
             transition="stroke-dashoffset 2s ease-in-out"
           ></path>
         </svg>
+
         {/* <svg
           className="custom-svg"
           id="Modo_de_aislamiento"
@@ -43,7 +45,7 @@ const WaveSections = () => {
             <h1 className=" col-span-text-center text-blue-600 text-7xl relative z-4000">
               Adwaina Richardson
             </h1>
-            <h3 className="text-center text-blue-600 text-5xl p-10">Front-End Developer</h3>
+            <h3 className="text-center text-blue-600 text-5xl p-10">Front-End Web Developer</h3>
             <p className="body-text-large max-w-2xl mx-auto text-center">
               "Transforming ideas into intuitive, user-focused digital experiences through
               creativity, collaboration, and seamless code."
@@ -51,17 +53,69 @@ const WaveSections = () => {
           </div>
 
           <div className="w-[100px] flex flex-col items-center justify-center">
+            {/* <a href="#" style={{ fontSize: '50px', color: '#0077b5' }}>
+              <FontAwesomeIcon icon={faPalette} />
+            </a>
+            <p className="text-center">Designer</p> */}
+          </div>
+
+         <div className="container" id="cont">
+  <p className="autoshow uji">
+    <i className="bx bxl-html5"></i> Front-End
+  </p>
+  <p className="autoshow uji">
+    <i className="bx bx-code-alt"></i> Web Developer
+  </p>
+  <p className="autoshow uji">
+    <i className="bx bxs-paint"></i> Designer
+  </p>
+</div>
+
+          {/* <div className="w-[100px] flex flex-col items-center justify-center">
             <a href="#" style={{ fontSize: '50px', color: '#0077b5' }}>
               <FontAwesomeIcon icon={faPalette} />
             </a>
             <p className="text-center">Designer</p>
-          </div>
+          </div> */}
+
+          {/* <div className="w-[100px] flex flex-col items-center justify-center">
+            <a href="#" style={{ fontSize: '50px', color: '#0077b5' }}>
+              <FontAwesomeIcon icon={faPalette} />
+            </a>
+            <p className="text-center">Front End Developer</p>
+          </div> */}
         </div>
         {/* <section className="panel-wave">
         </section> */}
       </div>
 
-      <div className="section-wrapper">
+
+<section className='text-center text-5xl p-10'>
+      <div className="container" id="cont"></div>
+     <div className="container" id="cont">
+
+   <p className="autoshow ">
+    <i className="bx bxl-javascript reveal-icon show"></i> JavaScript
+  </p>   
+  <i className="bx bxl-javascript reveal-icon show"></i>
+  <i className="bx bxl-html5 reveal-icon show"></i>
+  <i className="bx bxl-css3 reveal-icon show"></i>
+  <i className="bx bxl-typescript reveal-icon show"></i>
+  <i className="bx bxl-figma reveal-icon show"></i>
+  <i className="bx bxl-nodejs reveal-icon show"></i>
+  <i className="bx bxl-react reveal-icon show"></i>
+  <i className="bx bxl-tailwind-css reveal-icon show"></i>
+  <i className="bx bxl-wordpress reveal-icon show"></i>
+<img src="./images/icons/elementor.png" alt="Elementor" className="reveal-icon show w-11 h-11" />
+<img src="./images/icons/webflow.svg" alt="Webflow" className="reveal-icon show w-11 h-11" />
+
+
+
+</div>
+</section>
+
+
+      {/* <div className="section-wrapper">
         <svg
           className="custom-svg flipped"
           id="Modo_de_aislamiento"
@@ -74,12 +128,12 @@ const WaveSections = () => {
             className="line"
             vector-effect="non-scaling-stroke"
           ></path>
-        </svg>
+        </svg> */}
 
-        <section className="panel-wave panel-2">
-          <h1>Hello world!</h1>
-        </section>
-      </div>
+      {/* <section className="panel-wave panel-2"> */}
+      {/* <h1>Hello world!</h1> */}
+      {/* </section> */}
+      {/* </div> */}
     </>
   );
 };

@@ -2,6 +2,13 @@ import React from 'react';
 // import Device from '../components/Device.jsx';
 import Nav from '../components/Nav.jsx';
 import Device from '../components/devices/Device.jsx';
+import { Carousel } from 'antd';
+import Laptop from '../components/devices/Laptop.jsx';
+import EmblaCarousel from '../components/carousel/Carousel.jsx';
+import CarouselSlide from '../components/carousel/CarouselSlide.jsx';
+import MyDrawer from '../components/MyDrawer.jsx';
+
+
 export default function EYC() {
   // {/* Section 3 */}
 
@@ -47,13 +54,13 @@ export default function EYC() {
   return (
     // all react components have to return a single element
     <>
-      
       <Nav />
       {/* Homepage 1 */}
       {/* Left column */}
-      <div className="bg-background-50 border bg-yellow-50">
+      
+      <div className="bg-yellow-50 border bg-yellow-50">
         {/* <div className="panel grid grid-cols-1 md:grid-cols-3 bg-yellow-50 h-full"></div> */}
-        <div className="flex flex-col h-full">
+        <div className="p-20 flex flex-col h-full">
           <h2 className="text-center">Embrace Your Crown</h2>
           <p className="text-center text-xl">Website Build & Design </p>
         </div>
@@ -61,12 +68,13 @@ export default function EYC() {
         {/* Section 1 */}
 
         <section className="col-span-2 bg-[white] flex flex-col h-full">
-          <img src="/images/eyc/eyc_1.png" />
+          <img src="/images/eyc/eyc-hp.png" />
         </section>
       </div>
+      
       <div className="bg-yellow-50">
         {/* <div style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}> */}
-        <div className="panel">
+        {/* <div className="panel">
           <section className="three-column-layout">
             <div>
               <h2 className="h2-small text-center mt-10 mb-5">Client Objective</h2>
@@ -89,6 +97,7 @@ export default function EYC() {
                 </ul>
               </p>
             </div>
+            
             <div>
               <h2 className="h2-small text-center mt-10 mb-5 ">Strategy</h2>
               <p className="text-lg">
@@ -142,22 +151,52 @@ export default function EYC() {
                 </li>
               </ul>
               <div>
-              <p className="h2-small text-center mt-10 mb-5">
-                "The client reported a noticeable increase in appointment bookings and customer
-                interest within the first few weeks of launch."
-              </p>
+                <p className="h2-small text-center mt-10 mb-5">
+                  "The client reported a noticeable increase in appointment bookings and customer
+                  interest within the first few weeks of launch."
+                </p>
               </div>
+            </div>
+          </section>
+        </div> */}
+      </div>
+
+
+        {/* Introduction */}
+      <div className="bg-yellow-100">
+        <div className="panel">
+          <section className="two-column-layout">
+            <div>
+              <h2 className="h2-small">The Challenge</h2>
+              <p className="text-lg">
+                The Childcare Network of Evanston wanted to refresh their online presence and
+                improve the site's information organization. Some specific needs included making the
+                site easier to update and customize, improving navigation and usability, and
+                implementing accessibility features and a mobile-friendly, responsive design.
+              </p>
+            </div>
+            <div>
+              <h2 className="h2-small">The Goal</h2>
+              <p className="text-lg">
+                The website redesign aimed to create a user-friendly, modern, and engaging site
+                where users could easily find relevant resources. This included helping parents
+                access quality, affordable early childhood education; and keeping the community
+                up-to-date about CNE events and initiatives. CNE also wanted an easy, intuitive way
+                to update content while maintaining a consistent look and feel.
+              </p>
             </div>
           </section>
         </div>
       </div>
+
+
       {/* add role */}
       {/* <div className="bg-[#f1ce71-200]"> */}
-       <div className="bg-yellow-50">
+      {/* <div className="bg-yellw-50">
         <div className="panel">
-          <section className="one-column-layout">
-            <div className="bg-gray-200">
-              {/* <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
+          <section className="one-column-layout"> */}
+      {/* <div className="bg-gray-200"> */}
+      {/* <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
                 <p>
                   <h3 className="h3-underlined">Portfolio Materials</h3>
                   <p className="body-text">
@@ -218,32 +257,91 @@ export default function EYC() {
                   <img src="/images/bio/bio-pic.jpg" />
                 </p>
               </div> */}
+      {/* </div> */}
+
+      <div className="bg-yellow-50">
+        <div className="panel">
+          <section className="two-column-layout">
+            {/* <div className="bg-red-100"> */}
+            <div className="flex justify-center  items-center h-full min-h-[600px]">
+              <p>
+                <img src="./images/eyc/eyc1.png" />
+              </p>
             </div>
-            <dl className="mt-10 space-y-8 text-gray-900">
+
+            <d1 className="mt-10 space-y-3 text-lg text-gray-900">
               {features.map((feature) => (
                 <div key={feature.name} className="relative">
-                  <dt className="inline font-semibold text-gray-900">{feature.name}</dt>{' '}
+                  <dt className="inline font-semibold text-lg text-gray-900">{feature.name}</dt>{' '}
                   <dd className="inline">{feature.description}</dd>
                 </div>
               ))}
-            </dl>
-            </section>
-              </div>
-</div>
-          {/* <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}> */}
-         
-          <section className='bg-yellow-100'>
-            <section></section>
-            <div className="panel max-w-4xl m-auto">
-              <h2 className="text-3xl font-abril mb-6 text-gray-900">Services</h2>
-              <p className="text-lg text-gray-900 mb-12"></p>
-              <div>
-                {/* Add screenshot of services */}
-                {/* <img className="w-full" src="/images/eyc/eyc_1.png" alt="EYC Hero" /> */}
-              </div>
-            </div>
+            </d1>
           </section>
-        
+        </div>
+      </div>
+      {/* <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}> */}
+
+         <section className="bg-yellow-100">
+        <div className="panel">
+         <h2 className="text-3xl font-abril mb-6 text-gray-900">Testimonials</h2>
+          <p className="text-lg text-black mb-6">
+           Add some text here and get GIF of testimonials in moble view
+          </p>
+          {/* Left column */}
+          <div className="grid grid-cols-1 md:grid-cols-4">
+            <div className="flex justify-center md:justify-end">
+              {/* Add mobile testimonials GIF */}
+              <Device width="200px" imageUrl="/images/eyc/eyc_mobile_.gif" />
+              
+            </div>
+            {/* Right column */}
+            <section className="bg-yellow-100">
+        {/* Left column */}
+        <div className="panel grid grid-cols-1 md:grid-cols-1">
+          <div>
+            <div className="bg-blend-lighten">
+               <img  src="/images/eyc/eyc_mobile_.gif" />
+              <Carousel autoplay>
+                <div>
+                  <h3>
+                    {' '}
+                    <img src="./images/eyc/eyc-ss-t1.png" />
+                  </h3>
+                  <img />
+                </div>
+                <div>
+                  <img src="images/eyc/eyc-ss-t2.png" />
+                </div>
+                <div>
+                  <img src="images/eyc/eyc-ss-t3.png" />
+                </div>
+                <div>
+                  <img src="images/eyc/eyc-ss-t4.png" />
+                </div>
+              </Carousel>
+            </div>
+          </div>
+        </div>
+      </section>
+          </div>
+        </div>
+      </section>     
+
+
+
+      <section className="bg-yellow-100">
+        <section></section>
+        <div className="panel max-w-4xl m-auto">
+          <h2 className="text-3xl font-abril mb-6 text-gray-900">Services</h2>
+          <p className="text-lg text-gray-900 mb-12"></p>
+          <img src="./images/eyc/flip-card.gif" />
+          <div>
+            {/* Add screenshot of services */}
+            {/* <img className="w-full" src="/images/eyc/eyc_1.png" alt="EYC Hero" /> */}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
