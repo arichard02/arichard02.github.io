@@ -1,8 +1,22 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Button, Drawer, Space } from 'antd';
+import Projects from './Projects.jsx';
 
 export default function Nav({ isHome = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const [open, setOpen] = useState(false);
+    const [size, setSize] = useState();
+  
+    const showLargeDrawer = () => {
+      setSize('large');
+      setOpen(true);
+    };
+  
+    const onClose = () => {
+      setOpen(false);
+    };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -49,6 +63,12 @@ export default function Nav({ isHome = false }) {
                 >
                   My Work
                 </Link>
+                  <button
+                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium hover:bg-transparent"
+                onClick={showLargeDrawer}
+              >
+                My Work
+              </button>
                 <Link
                   to="/tips/"
                   className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
@@ -119,6 +139,12 @@ export default function Nav({ isHome = false }) {
               >
                 My Work
               </Link>
+                <button
+                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium hover:bg-transparent"
+                onClick={showLargeDrawer}
+              >
+                My Work
+              </button>
               <Link
                 to="/tips/"
                 className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
@@ -130,6 +156,26 @@ export default function Nav({ isHome = false }) {
           </div>
         </div>
       </nav>
+      <Drawer
+        title={`${size} Drawer`}
+        placement="right"
+        size={size}
+        onClose={onClose}
+        open={open}
+        extra={
+          <Space>
+            <Button onClick={onClose}>Cancel</Button>
+            <Button type="primary" onClick={onClose}>
+              OK
+            </Button>
+          </Space>
+        }
+      >
+        {/* <p>Drawer #1...</p>
+        <p>Drawer #2...</p>
+        <p>Drawer #3...</p> */}
+        <Projects />
+      </Drawer>
     </>
   );
 }
