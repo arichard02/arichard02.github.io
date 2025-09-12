@@ -8,7 +8,6 @@ import EmblaCarousel from '../components/carousel/Carousel.jsx';
 import CarouselSlide from '../components/carousel/CarouselSlide.jsx';
 import MyDrawer from '../components/MyDrawer.jsx';
 
-
 export default function EYC() {
   // {/* Section 3 */}
 
@@ -57,8 +56,8 @@ export default function EYC() {
       <Nav />
       {/* Homepage 1 */}
       {/* Left column */}
-      
-      <div className="bg-yellow-50 border bg-yellow-50">
+
+      <div className="bg-yellow-50 border dark:bg-black">
         {/* <div className="panel grid grid-cols-1 md:grid-cols-3 bg-yellow-50 h-full"></div> */}
         <div className="p-20 flex flex-col h-full">
           <h2 className="text-center">Embrace Your Crown</h2>
@@ -71,7 +70,7 @@ export default function EYC() {
           <img src="/images/eyc/eyc-hp.png" />
         </section>
       </div>
-      
+
       <div className="bg-yellow-50">
         {/* <div style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}> */}
         {/* <div className="panel">
@@ -161,8 +160,7 @@ export default function EYC() {
         </div> */}
       </div>
 
-
-        {/* Introduction */}
+      {/* Introduction */}
       <div className="bg-yellow-100">
         <div className="panel">
           <section className="two-column-layout">
@@ -188,7 +186,6 @@ export default function EYC() {
           </section>
         </div>
       </div>
-
 
       {/* add role */}
       {/* <div className="bg-[#f1ce71-200]"> */}
@@ -282,53 +279,50 @@ export default function EYC() {
       </div>
       {/* <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}> */}
 
-         <section className="bg-yellow-100">
+      <section className="bg-yellow-100">
         <div className="panel">
-         <h2 className="text-3xl font-abril mb-6 text-gray-900">Testimonials</h2>
+          <h2 className="text-3xl font-abril mb-6 text-gray-900">Testimonials</h2>
           <p className="text-lg text-black mb-6">
-           Add some text here and get GIF of testimonials in moble view
+            Add some text here and get GIF of testimonials in moble view
           </p>
           {/* Left column */}
           <div className="grid grid-cols-1 md:grid-cols-4">
             <div className="flex justify-center md:justify-end">
               {/* Add mobile testimonials GIF */}
               <Device width="200px" imageUrl="/images/eyc/eyc_mobile_.gif" />
-              
             </div>
             {/* Right column */}
             <section className="bg-yellow-100">
-        {/* Left column */}
-        <div className="panel grid grid-cols-1 md:grid-cols-1">
-          <div>
-            <div className="bg-blend-lighten">
-               <img  src="/images/eyc/eyc_mobile_.gif" />
-              <Carousel autoplay>
+              {/* Left column */}
+              <div className="panel grid grid-cols-1 md:grid-cols-1">
                 <div>
-                  <h3>
-                    {' '}
-                    <img src="./images/eyc/eyc-ss-t1.png" />
-                  </h3>
-                  <img />
+                  <div className="bg-blend-lighten">
+                    <img src="/images/eyc/eyc_mobile_.gif" />
+                    <Carousel autoplay>
+                      <div>
+                        <h3>
+                          {' '}
+                          <img src="./images/eyc/eyc-ss-t1.png" />
+                        </h3>
+                        <img />
+                      </div>
+                      <div>
+                        <img src="images/eyc/eyc-ss-t2.png" />
+                      </div>
+                      <div>
+                        <img src="images/eyc/eyc-ss-t3.png" />
+                      </div>
+                      <div>
+                        <img src="images/eyc/eyc-ss-t4.png" />
+                      </div>
+                    </Carousel>
+                  </div>
                 </div>
-                <div>
-                  <img src="images/eyc/eyc-ss-t2.png" />
-                </div>
-                <div>
-                  <img src="images/eyc/eyc-ss-t3.png" />
-                </div>
-                <div>
-                  <img src="images/eyc/eyc-ss-t4.png" />
-                </div>
-              </Carousel>
-            </div>
+              </div>
+            </section>
           </div>
         </div>
       </section>
-          </div>
-        </div>
-      </section>     
-
-
 
       <section className="bg-yellow-100">
         <section></section>

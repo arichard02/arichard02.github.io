@@ -15,13 +15,13 @@ export default function Home() {
 
   return (
     <>
-    <section class>
-      <Nav isHome={true} />
+      <section class>
+        <Nav isHome={true} />
 
-      {/* Button that toggles from light and dark  */}
+        {/* Button that toggles from light and dark  */}
 
-      <WaveSections />
-    </section>
+        <WaveSections />
+      </section>
       {/* <button style={{ backgroundColor: 'black', color: 'white' }}>Dark Mode</button> */}
 
       {/* Top Banner */}
@@ -41,6 +41,16 @@ export default function Home() {
         </div>
       </div> */}
 
+      {/* Dark Mode Test Section */}
+      <div className="panel">
+        <div className="bg-blue-100 dark:bg-blue-900 p-4 rounded-lg mb-6">
+          <h3 className="text-blue-800 dark:text-blue-200">Dark Mode Test</h3>
+          <p className="text-blue-700 dark:text-blue-300">
+            This box changes color in dark mode! Try toggling the theme button.
+          </p>
+        </div>
+      </div>
+
       {/* About Section */}
       <div className="panel">
         <h2>About Me</h2>
@@ -55,7 +65,6 @@ export default function Home() {
         </p>
       </div>
 
-        
       <Projects />
     </>
   );

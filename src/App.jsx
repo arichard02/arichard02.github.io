@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import 'boxicons/css/boxicons.min.css';
-
 
 // My page imports
 import AUX from './pages/TheAux';
@@ -22,9 +17,8 @@ import Style from './pages/Style';
 import Practice from './pages/Practice';
 
 import { ConfigProvider, theme as antdTheme } from 'antd';
-import ThemeToggleButton from "./components/ThemeToggleButton";
-import "./components/ThemeToggle.css";
-
+import ThemeToggleButton from './components/ThemeToggleButton';
+import './components/ThemeToggle.css';
 
 export default function App() {
   const [isDark, setIsDark] = useState(() => {
@@ -35,20 +29,18 @@ export default function App() {
     const newTheme = !isDark;
     setIsDark(newTheme);
     localStorage.setItem('theme', newTheme ? 'dark' : 'light');
-    document.body.classList.toggle('dark-theme', newTheme);
+    document.documentElement.classList.toggle('dark', newTheme);
   };
 
   useEffect(() => {
     // On initial load, ensure the theme class is synced
-    document.body.classList.toggle('dark-theme', isDark);
+    document.documentElement.classList.toggle('dark', isDark);
   }, [isDark]);
 
   return (
     <ConfigProvider
       theme={{
-        algorithm: isDark
-          ? antdTheme.darkAlgorithm
-          : antdTheme.defaultAlgorithm,
+        algorithm: isDark ? antdTheme.darkAlgorithm : antdTheme.defaultAlgorithm,
       }}
     >
       <Router>
@@ -81,15 +73,6 @@ export default function App() {
   );
 }
 
-
-
-
-
-
-
-
-
-
 // import React, { useEffect } from 'react';
 // import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 // import AUX from './pages/TheAux';
@@ -109,15 +92,10 @@ export default function App() {
 // import ThemeToggleButton from './ThemeToggleButton';
 // import './ThemeToggle.css'; // Your animation styles
 
-
-
-
 // export default function App() {
 //   const [isDark, setIsDark] = useState(() => {
 //     return localStorage.getItem('theme') === 'dark';
 //   });
-
-
 
 // const toggleTheme = () => {
 //     const newTheme = !isDark;
@@ -126,12 +104,7 @@ export default function App() {
 //     document.body.classList.toggle('dark-theme', newTheme);
 //   };
 
-
-
-
 // {/* <div>{darkMode ? "Dark" : "Light"}</div>; */}
- 
-       
 
 // function App() {
 //    return (
@@ -149,21 +122,17 @@ export default function App() {
 //   );
 // }
 
+// {/* <Section title="Adwaina" />
+// <Section title="Hello world!" flipped />
+// <div className="min-h-screen"> */}
 
-      
+// // <div>
+//   {/* <h1>Scroll to see the wave animate</h1>
+//   <div style={{ height: '100vh' }} />
+//   <WavePath />
+//   <div style={{ height: '100vh' }} /> */}
 
-      // {/* <Section title="Adwaina" />
-      // <Section title="Hello world!" flipped />
-      // <div className="min-h-screen"> */}
-
-      // // <div>
-      //   {/* <h1>Scroll to see the wave animate</h1>
-      //   <div style={{ height: '100vh' }} />
-      //   <WavePath />
-      //   <div style={{ height: '100vh' }} /> */}
-
-
-      //   {/* Depending on the URL, render the appropriate component: */}
+//   {/* Depending on the URL, render the appropriate component: */}
 //         {/* <Routes>
 //           <Route path="/" element={<Home />} />
 //           <Route path="/bio/" element={<Bio />} />
@@ -182,6 +151,5 @@ export default function App() {
 //     </Router>
 //   );
 // }
-
 
 // export default App; */}
