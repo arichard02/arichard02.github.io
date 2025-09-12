@@ -58,7 +58,7 @@ export default function EYC() {
       {/* Homepage 1 */}
       {/* Left column */}
       
-      <div className="bg-yellow-50 border bg-yellow-50">
+      <div className=" border bg-yellow-50">
         {/* <div className="panel grid grid-cols-1 md:grid-cols-3 bg-yellow-50 h-full"></div> */}
         <div className="p-20 flex flex-col h-full">
           <h2 className="text-center">Embrace Your Crown</h2>
